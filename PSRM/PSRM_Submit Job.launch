@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<booleanAttribute key="org.eclipse.debug.core.appendEnvironmentVariables" value="true"/>
+<listAttribute key="org.eclipse.debug.ui.favoriteGroups">
+<listEntry value="org.eclipse.debug.ui.launchGroup.run"/>
+</listAttribute>
+<booleanAttribute key="org.eclipse.jdt.launching.DEFAULT_CLASSPATH" value="true"/>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="com.splwg.base.api.batch.SubmitBatch"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="${string_prompt:additional submitter options (-h for help)}"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="PSRM"/>
+<stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Xms16m -Xmx256m -XX:MaxPermSize=192m -Dfile.encoding=ISO8859_1 -Dcom.splwg.submitBatch.defaultPropertiesFile=${resource_loc:/PSRM/_config/submitbatch.properties} -Dcom.splwg.submitBatch.batchCodePropertiesDir=${env_var:APPSVRDIR}/scripts/cm -Dcom.splwg.submitBatch.showPropertiesForRun=true -Dlog4j.configuration=file:/${resource_loc:/PSRM/_config/submitbatchlog4j.properties} -Dcom.splwg.standalone.logfile=${env_var:APPSVRDIR}/logs/submitjob.${system_property:eclipse.startTime}.log -Dcom.splwg.submitBatch.batchCodeVariableForPrompt=prompt"/>
+</launchConfiguration>

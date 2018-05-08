@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/PSRM/_lib/spl-base-4.3.0.1.0.jar"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<booleanAttribute key="org.eclipse.debug.core.appendEnvironmentVariables" value="true"/>
+<listAttribute key="org.eclipse.debug.ui.favoriteGroups">
+<listEntry value="org.eclipse.debug.ui.launchGroup.run"/>
+</listAttribute>
+<booleanAttribute key="org.eclipse.jdt.launching.DEFAULT_CLASSPATH" value="true"/>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="com.splwg.base.api.batch.ThreadPoolWorker"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="${string_prompt:additional worker options (-h for help)}"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="PSRM"/>
+<stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Xms16m -Xmx1024m -XX:MaxPermSize=192m -Dfile.encoding=ISO8859_1 -Dcom.splwg.threadPoolWorker.defaultPropertiesFile=${resource_loc:/PSRM/_config/threadpoolworker.properties} -Dlog4j.configuration=file:/${resource_loc:/PSRM/_config/tpwlog4j.properties} -Dcom.splwg.standalone.logfile=${env_var:APPSVRDIR}/logs/threadpoolworker.${system_property:eclipse.startTime}.log"/>
+</launchConfiguration>
